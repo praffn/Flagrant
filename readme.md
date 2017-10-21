@@ -7,7 +7,10 @@
 
 1) Create a new instance of `Flagrant` by giving the static method `Parse` an array of strings.
 
-2) Tell flagrant which flags you want to extract
+2) Tell flagrant which flags you want to extract by providing three parameters:
+  * Flagname - Name of the flag in the given dictionary.
+  * DefaultValue - Default value that will be used, if the flat wasn't found in the dictionary.
+  * Value - References the variable where the retrieved value will be stored.
 
 ```csharp
 public static void Main(string[] args)
@@ -30,4 +33,7 @@ You can use the following methods to extract the flags with different types:
 * `.Double(string flagname, double defaultValue, out double value)`
 * `.Bool(string flagname, bool defaultValue, out var value)`
 * `.Enum<TEnum>(string flagename, TEnum defaultValue, out TEnum value)`
-* `.Custom<T>(string flagename, T defaultValue, Func<string, T> func)`
+* `.Custom<T>(string flagename, T defaultValue, Func<string, T> func, out T value)`
+
+### Custom Flags
+With the Custom method, it's possible to convert arguments into custom types. The additional Func parameter is responsible for converting the string representation into it's corresponding custom value.
