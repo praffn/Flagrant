@@ -8,9 +8,9 @@
 1) Create a new instance of `Flagrant` by giving the static method `Parse` an array of strings.
 
 2) Tell flagrant which flags you want to extract by providing three parameters:
-1. Flagname - Name of the flag in the given dictionary.
-2. DefaultValue - Default value that will be used, if the flat wasn't found in the dictionary.
-3. Value - References the variable where the retrieved value will be stored.
+  1. Flagname - Name of the flag in the given dictionary.
+  2. DefaultValue - Default value that will be used, if the flat wasn't found in the dictionary.
+  3. Value - References the variable where the retrieved value will be stored.
 
 ```csharp
 public static void Main(string[] args)
