@@ -39,3 +39,10 @@ You can use the following methods to extract the flags with different types:
 
 ### Custom Flags
 With the Custom method, it's possible to convert arguments into custom types. The additional Func parameter is responsible for converting the string representation into it's corresponding custom value.
+
+### Flagrant Project Directory
+```
+Flagrant
+├── Flagrant.cs
+├── Flagrant.csproj
+```
