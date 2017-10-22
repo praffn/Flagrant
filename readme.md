@@ -5,9 +5,11 @@
 
 ## How to use
 
-1) Create a new instance of `Flagrant` by giving the static method `Parse` an array of strings.
+1) Add a reference to `Flagrant` project or build the project then add a reference to the `Flagrant.dll` from your own project.
 
-2) Tell flagrant which flags you want to extract by providing three parameters:
+2) Create a new instance of `Flagrant` by giving the static method `Parse` an array of strings.
+
+3) Tell flagrant which flags you want to extract by providing three parameters:
   * Flagname - Name of the flag in the given dictionary.
   * DefaultValue - Default value that will be used, if the flat wasn't found in the dictionary.
   * Value - References the variable where the retrieved value will be stored.
